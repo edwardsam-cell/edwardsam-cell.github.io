@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>
+			Personal Website
+		</title>
+    </head>
+    <style>
+        body{ background: #03031b;
+        }
+        table{
+            width: 800px;
+            table-layout: fixed;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-family: Arial;
+            color: #ffffff;
+        }
+        table, th,td{
+            border: 1px dotted white;
+            border-collapse: collapse;
+            padding: 20px;
+            font-size: 20px; 
+        }
+        th{
+            background: rgb(46, 7, 46);
+            padding: 30px;
+            text-transform: uppercase;
+        }
+        td:nth-child(5n+1){
+            background: rgb(44, 5, 5);
+        }
+        td:nth-child(5n+2){
+            background: #003356;
+        }
+        td:nth-child(5n+3){
+            background: green;
+        }
+    </style>
+	<body>
+		<div class="main">
+			<div class="circle"></div>
+			<div class="circle-1 "></div>
+			<div class="section">
+				<div class="nav">
+					<nav>
+						<label class="logo">
+							<h2>Personal Website</h2>
+						</label>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Contact</a></li>
+							<button class="btn">Get Started</button>
+						</ul>
+					</nav>
+				</div>
+			<div class="intro">
+				<div class="circle-2"></div>
+				<div class="circle-3"></div>
+				<img src="2.jpg">
+				<h3 class="heading">Hello, My Name is</h3>
+				<h1>Muhammad Bilal Hakim Bin Azmi</h1>
+				<p>A student from UiTM, final year student of Computer Science</p>
+				<h3>Find Me On</h3>
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-pinterest-square"></i>
+				<div class="intro-btn">
+					<button class="in-btn">Chat me</button>
+					<button class="in-btn btn-1">Portfolio</button>
+				</div>
+			</div>	
+            </div>
+            <br>
+            <div class ="biodata">
+					<p>My Biodata</p>
+            </div>
+            <br>
+            <div>
+                <table>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Info</th>
+                        </tr>
+                        <tr>
+                            <td> Age</td>
+                            <td> 19 years 1 month</td>                           
+                        </tr>
+                        <tr>
+                            <td> Address</td>
+                            <td> Kulim,Kedah</td>                           
+                        </tr>
+                        <tr>
+                            <td> Favorite Food</td>
+                            <td> Tomyam</td>                           
+                        </tr>
+                        <tr>
+                            <td> Favorite Drink</td>
+                            <td> Sky juice</td>                           
+                        </tr>
+                        <tr>
+                            <td> Hobby</td>
+                            <td> Travel,Football</td>                           
+                        </tr>
+                        <tr>
+                            <td> Marital Status</td>
+                            <td> Single</td>                           
+                        </tr>
+                    </table>
+                </table>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <center>
+                    <button onclick="playPause()">Play/Pause</button> 
+                    <button onclick="makeBig()">Big</button>
+                    <button onclick="makeSmall()">Small</button>
+                    <button onclick="makeNormal()">Normal</button>
+                    <br><br>
+                    <video id="video1" width="720" height="480">
+                        <source src="A.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </center>
+            </div>
+            <div class ="biota">
+                <p>Travel Video with my Friends</p>
+        </div>
+            
+        <script> 
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 760;
+            myVideo.height = 520; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 520;
+            myVideo.height = 360;
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 640;
+            myVideo.height = 480;
+        } 
+        </script>
+        </div>
+    </body>
+</html>
